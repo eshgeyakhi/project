@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"href"fictioncss.css">
+<style>
+
+ 
+
+body {background-color:beige;}
+
+
+
+
+</style>
+</head>
+<body>
+<!-- The grid: four columns -->
+<div class="row">
+        <div class="column">
+          <img src="fiction1.jpg" alt="film1" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="fiction2.jpg" alt="film2" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="fiction3.jpg" alt="film3" onclick="myFunction(this);">
+        </div>
+        
+      </div>
+      
+      <!-- The expanding image container -->
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+
+</body>
+
+</html>
